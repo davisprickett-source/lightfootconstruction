@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HomeIcon, BathroomIcon, KitchenIcon, DeckIcon, GeneralRemodelingIcon, ConstructionManagementIcon } from '../icons/ServiceIcons';
+import { DeerLogo } from '../icons/DeerLogo';
 
 interface HomeProps {
     onQuickEstimate: (data: { name: string; email: string; phone: string; service: string; message: string; }) => void;
@@ -63,19 +64,26 @@ const Home: React.FC<HomeProps> = ({ onQuickEstimate }) => {
 
     return (
         <>
-            <div className="relative h-[calc(100vh-6rem)] text-white">
+            <div className="relative min-h-[55vh] lg:min-h-[65vh] text-white">
                 <div className="absolute inset-0">
                     <img 
-                        src="https://images.unsplash.com/photo-1572949645841-094f3a9c4c94?q=80&w=2070&auto=format&fit=crop" 
+                        src="/images/hero.jpg" 
                         alt="Framing of a new residential house under construction against a clear blue sky"
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-black/60"></div>
                 </div>
-                <div className="absolute inset-0 z-10 flex items-center justify-center p-4">
-                    <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="absolute inset-0 z-10 flex items-center justify-center p-2 sm:p-4">
+                    <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         {/* Left Side: Text */}
                         <div className="text-center lg:text-left animate-fade-in-down">
+                            <div className="inline-flex items-center gap-5 bg-white/10 border border-white/20 rounded-2xl px-6 py-5 backdrop-blur-md shadow-2xl mb-8">
+                                <DeerLogo className="h-20 w-20 drop-shadow-lg" />
+                                <div className="text-left leading-tight">
+                                    <p className="text-2xl md:text-3xl font-heading font-bold uppercase tracking-wide text-brand-cream">Lightfoot & Lightfoot</p>
+                                    <p className="text-lg md:text-2xl font-heading font-semibold uppercase tracking-[0.3em] text-brand-wood">Construction</p>
+                                </div>
+                            </div>
                             <h1 className="text-4xl md:text-6xl font-extrabold font-heading mb-4 text-brand-cream">
                                 Building Your Vision Since 1981
                             </h1>
@@ -140,7 +148,7 @@ const Home: React.FC<HomeProps> = ({ onQuickEstimate }) => {
                             We offer a wide range of services to meet your residential and commercial needs.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                         {services.map((service, index) => (
                             <div key={index} className="bg-brand-dark-secondary p-8 rounded-lg shadow-lg border border-gray-700 hover:border-brand-orange transition-all duration-300 transform hover:-translate-y-1">
                                 <div className="flex items-center justify-center h-20 w-20 rounded-md bg-brand-dark mb-6">

@@ -36,10 +36,10 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                         className="flex items-center cursor-pointer"
                         onClick={() => setCurrentPage(Page.Home)}
                     >
-                       <DeerLogo className="h-16 w-16 text-brand-charcoal" />
+                       <DeerLogo className="h-16 w-16" variant="charcoal" />
                         <div className="ml-2">
                             <span className="text-xl font-bold text-brand-charcoal tracking-wide block">Lightfoot & Lightfoot</span>
-                            <span className="text-xs text-brand-wood font-bold tracking-widest block">CONSTRUCTION</span>
+                            <span className="text-sm sm:text-base text-brand-wood font-bold tracking-widest block">CONSTRUCTION</span>
                         </div>
                     </div>
                     <nav className="hidden lg:flex items-center space-x-2">

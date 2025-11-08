@@ -2,10 +2,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 const images = [
-    'https://picsum.photos/1200/800?random=1',
-    'https://picsum.photos/1200/800?random=2',
-    'https://picsum.photos/1200/800?random=3',
-    'https://picsum.photos/1200/800?random=4',
+    '/images/carousel-1.jpg',
+    '/images/carousel-2.jpg',
+    '/images/carousel-3.jpg',
+    '/images/carousel-4.jpg',
 ];
 
 const PhotoCarousel: React.FC = () => {

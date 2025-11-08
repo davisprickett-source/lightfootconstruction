@@ -13,13 +13,11 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
             <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div className="mb-8 md:mb-0">
-                        <div className="flex items-center mb-4">
-                            <div className="bg-brand-white p-2 rounded-md mr-3">
-                                <DeerLogo className="h-10 w-10 text-brand-charcoal" />
-                            </div>
+                        <div className="flex items-center mb-4 gap-3">
+                            <DeerLogo className="h-12 w-12" />
                             <div>
                                 <h2 className="text-xl font-bold text-brand-white tracking-wide">Lightfoot & Lightfoot</h2>
-                                <p className="text-xs text-brand-wood font-bold tracking-widest">CONSTRUCTION</p>
+                                <p className="text-sm sm:text-base text-brand-wood font-bold tracking-widest">CONSTRUCTION</p>
                             </div>
                         </div>
                         <p className="text-gray-400 text-sm">Building visions into reality since 1981. Your trusted partner in construction and remodeling.</p>

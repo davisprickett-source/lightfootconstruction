@@ -9,7 +9,7 @@ const About: React.FC = () => {
                     <div className="lg:w-1/2">
                         <div className="relative">
                            <img 
-                                src="https://picsum.photos/600/700?random=10" 
+                                src="/images/about.jpg" 
                                 alt="Team of constructors" 
                                 className="rounded-lg shadow-2xl object-cover w-full h-full"
                            />
